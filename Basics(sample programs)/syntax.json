@@ -1,0 +1,25 @@
+{"first" : "John" , "secn" : "Smith" , "age":23,"married":false }
+
+
+//String
+{"first" : "John" , "secn" : "Smith" , "comment": " Hey How u doing \" Bye\" "}
+//numbers
+{"age": 23, "year": 2019, "marks" : 56 }
+//boolean
+{"married": false, "passed": true}
+//Null
+{"hobbies": null}
+//Arrays
+{
+   "holidays": ["sat","sun"],
+    "multiples": [4,10,56,89],
+    "pass":[true,flase,true],
+   ''multiples'':[ [2,4,5],[4,5,6],[8,9,7] ]
+   "employes":[ {"first" : "John"}, {"secn" : "Smith"} ]
+}
+//objects
+{
+    "address": {"first" : "John" , "secn" : "Smith" }
+}
+
+

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>JSON.parse and JSON.stringify</title>
+    <script>
+//JSON.parse
+         var jsonData = '{"first":"John","last":"Smith"}';
+         alert(typeof(jsonData));
+         var jsObject = JSON.parse(jsonData);
+         alert(typeof(jsObject));
+         document.write(jsObject.first + " " + jsObject.last);
+//JSON.stringify
+         /*var jsObject = {first:"John",last:"Smith"};
+         alert(typeof(jsObject));
+         var jsonString = JSON.stringify(jsObject);
+         alert(typeof(jsonString));
+         document.write(jsonString);*/
+    </script>
+</head>
+<body>
+</body>
+</html>

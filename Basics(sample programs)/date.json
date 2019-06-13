@@ -1,0 +1,8 @@
+<html>
+<script>
+window.onload=function(){
+var jsstring='{"fname":"john","dob":406771200000}';
+var jsobject=JSON.parse(jsstring);
+alert(jsobject.dob);
+</script>
+</html>

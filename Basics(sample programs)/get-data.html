@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Get JSON from Server</title>
+    <script>
+         function collectJSON()
+         {
+             var xmlhttp = new XMLHttpRequest();
+             xmlhttp.open("GET", "http://localhost/JSON/simplejson.json", false);
+            // xmlhttp.open("GET", "http://localhost/JSON/complexjson.json", false);
+             xmlhttp.send();
+             if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+             {
+                 var result = xmlhttp.responseText;
+                 document.getElementById("show").innerHTML = result;
+             }
+         }
+    </script>
+</head>
+<body>
+     <button id="btnClick" onclick="collectJSON();">Collect</button>
+     <div id="show"></div>
+</body>
+</html>

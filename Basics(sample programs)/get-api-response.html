@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Get JSON Response from API for currency converter</title>
+    <script>
+ function collectJSON()
+ {
+ var xmlhttp = new XMLHttpRequest();
+ var url = "//api.exchangeratesapi.io/latest?base=";
+url+="USD";
+ xmlhttp.open("GET", url, false);
+ xmlhttp.send();
+ if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+ {
+ var result = xmlhttp.responseText;
+ var jsResult = JSON.parse(result);
+ document.getElementById("show").innerHTML = jsResult.rates.INR;
+ }
+ }
+    </script>
+</head>
+<body>
+ <button id="btnClick" onclick="collectJSON();">Collect</button>
+ <div id="show"></div>
+</body>
+</html>
